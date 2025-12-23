@@ -1,39 +1,83 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-    <h1>Akshat Raj's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Akshat Raj – Resume</title>
 
-    <a href="./public/movie-ranking.html"><h1>Movie Ranking Project</h1></a>
-    <img src="./assets/images/movie-ranking.png" alt="screenshots" height="200">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 
-    <a href="./public/birthday-invite.html"><h1>Birthday Invite Project</h1></a>
-    <img src="./assets/images/birthday-invite.png" alt="screenshots" height="200">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <hr>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact me</a>
+<body>
+  <div class="container">
 
- </body>
- </html>
+    <h1>Akshat Raj</h1>
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+    <!-- CONTACTS -->
+    <div class="contacts">
+      <span>Kanpur, India</span>
+      <span>+91 8401201559</span>
+      <span>akshatraj2312@gmail.com</span>
+      <span>github.com/albertaj23</span>
+      <span>linkedin.com/in/akshat-raj-77734130a</span>
+    </div>
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+      <div class="row">
+        <div>
+          <p class="bold">Vellore Institute of Technology</p>
+          <p>B.Tech, Computer Science and Engineering</p>
+        </div>
+        <div class="date">2024 – 2028</div>
+      </div>
+    </section>
 
-<!-- TODO 5: Add a link to the project pages -->
+    <!-- TECHNICAL SKILLS -->
+    <section>
+      <h2>Technical Skills</h2>
+      <p><strong>Languages:</strong> Java (DSA & OOP), JavaScript, Python</p>
+      <p><strong>Frameworks:</strong> React.js, React Native</p>
+      <p><strong>CS Fundamentals:</strong> Data Structures & Algorithms, Object-Oriented Programming</p>
+      <p><strong>Tools:</strong> Git, GitHub, HTML, CSS</p>
+    </section>
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+      <div class="row">
+        <div>
+          <p class="bold">Smart India Hackathon (SIH) — App Developer</p>
+          <p class="italic">Crop AI | React Native</p>
+        </div>
+        <div class="date">Aug 2025</div>
+      </div>
+
+      <ul>
+        <li>Developed a cross-platform mobile application using React Native for agricultural decision support.</li>
+        <li>Built modular UI components and managed application state for real-time user inputs.</li>
+        <li>Collaborated in a team-based, time-constrained environment to design and prototype core features.</li>
+        <li>Applied problem devolution and OOP principles to optimize application logic.</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h2>Projects</h2>
+
+      <p class="bold">Music & Travel Booking Web Application</p>
+      <ul>
+        <li>Built a React-based web application combining music discovery with travel booking workflows.</li>
+        <li>Designed reusable UI components and implement CRUD operations using React.</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
