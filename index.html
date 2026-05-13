@@ -1,123 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            margin: 0;
-            background: #f4f1eb;
-            color: #222;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.5;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #000;
+      background: #fff;
+      padding: 40px 50px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        .resume {
-            width: min(900px, calc(100% - 32px));
-            margin: 32px auto;
-            padding: 40px;
-            background: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
+    /* ── HEADER ── */
+    .header {
+      text-align: center;
+      margin-bottom: 8px;
+    }
 
-        header {
-            text-align: center;
-            border-bottom: 2px solid #222;
-            padding-bottom: 18px;
-            margin-bottom: 28px;
-        }
+    .header h1 {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
 
-        h1,
-        h2,
-        h3,
-        p {
-            margin-top: 0;
-        }
+    .header .contact {
+      font-size: 10.5px;
+    }
 
-        h1 {
-            margin-bottom: 8px;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
+    .contact a {
+      color: #000;
+      text-decoration: none;
+    }
 
-        h2 {
-            border-bottom: 1px solid #bbb;
-            padding-bottom: 6px;
-            margin-bottom: 16px;
-            text-transform: uppercase;
-            font-size: 1rem;
-            letter-spacing: 0.06em;
-        }
+    .contact i {
+      font-size: 10px;
+      margin-right: 2px;
+    }
 
-        .section {
-            margin-bottom: 28px;
-        }
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 10px;
+    }
 
-        .project {
-            margin-bottom: 18px;
-        }
+    .section-title {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
 
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-            font-weight: 700;
-        }
+    /* ── ENTRY ── */
+    .entry {
+      margin-bottom: 8px;
+    }
 
-        .project-stack {
-            color: #555;
-            font-style: italic;
-        }
+    .entry:last-child {
+      margin-bottom: 0;
+    }
 
-        ul {
-            margin: 8px 0 0 20px;
-            padding: 0;
-        }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
 
-        li {
-            margin-bottom: 6px;
-        }
+    .org {
+      font-weight: bold;
+      font-size: 11px;
+    }
 
-        @media (max-width: 600px) {
-            .resume {
-                padding: 24px;
-            }
+    .location {
+      font-size: 11px;
+      font-style: italic;
+    }
 
-            .project-header {
-                display: block;
-            }
-        }
-    </style>
+    .role {
+      font-size: 11px;
+      font-style: italic;
+    }
+
+    .date {
+      font-size: 11px;
+    }
+
+    .detail {
+      font-size: 11px;
+      margin-top: 1px;
+    }
+
+    /* ── BULLETS ── */
+    ul {
+      list-style: disc;
+      padding-left: 16px;
+      margin-top: 3px;
+    }
+
+    ul li {
+      font-size: 11px;
+      line-height: 1.5;
+      margin-bottom: 2px;
+    }
+
+    /* ── ADDITIONAL ── */
+    .additional-row {
+      font-size: 11px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <main class="resume">
-        <header>
-            <h1>Resume</h1>
-            <p>Software Developer</p>
-        </header>
 
-        <section class="section" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Projects</h2>
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Akshat Raj</h1>
+    <div class="contact">
+      <span><i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh</span>
+      <span> | </span>
+      <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/akshat-raj-77734130a">linkedin.com/in/akshat-raj-77734130a</a></span>
+      <span> | </span>
+      <span><i class="fa-solid fa-envelope"></i> <a href="mailto:akshatraj2312@gmail.com">akshatraj2312@gmail.com</a></span>
+      <span> | </span>
+      <span><i class="fa-brands fa-github"></i> <a href="https://github.com/albertaj23">github.com/albertaj23</a></span>
+    </div>
+  </div>
 
-            <article class="project">
-                <div class="project-header">
-                    <h3>JumbleM — Full-Stack Music &amp; Location Social Web App</h3>
-                    <span class="project-stack">React, Vite, React Router, Express.js, Node.js</span>
-                </div>
-                <ul>
-                    <li>Built and documented a React/Vite single-page application where users create music-based “vibe” submissions that sync into a queue, social-style post feed, and travel-map visualization.</li>
-                    <li>Implemented routed experiences for onboarding, vibe creation, queue management, travel-map filtering, and nickname-based profile flows using React Router, reusable components, React Context, hooks, and localStorage-backed state.</li>
-                    <li>Developed a lightweight Express/Node.js REST API for health checks, nickname validation, user registration, profile lookup, category post creation, activity history, notification clearing, and JSON-file demo persistence.</li>
-                    <li>Centralized frontend API helpers with Vite proxying and authored contributor-facing documentation covering architecture, setup workflow, endpoint behavior, feature ownership, and a roadmap for authentication, maps, audio links, notifications, and production data hardening.</li>
-                </ul>
-            </article>
-        </section>
-    </main>
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="org">VIT UNIVERSITY</span>
+        <span class="location">Vellore, Tamil Nadu</span>
+      </div>
+      <div class="row">
+        <span class="role">Bachelor of Technology</span>
+        <span class="date">2028</span>
+      </div>
+      <div class="detail">Major in Computer Science; </div>
+      <div class="detail">Cumulative GPA: 8.18/10;</div>
+    </div>
+
+
+
+  <!-- UNIVERSITY PROJECTS -->
+    <div class="section">
+        <div class="section-title">University Projects</div>
+
+        <div class="entry">
+    <div class="row">
+        <span class="org">JumbleM — Full-Stack Music &amp; Location Social Web App</span>
+        <span class="date">2025</span>
+    </div>
+
+    <div class="detail" style="font-style: italic; margin-bottom: 3px;">
+        React, Vite, React Router, Express.js, Node.js, React Context, CSS
+    </div>
+
+    <ul>
+        <li>Built a full-stack React/Vite SPA with 5 routed modules for onboarding, vibe creation, queue management, travel-map visualization, and user profiles.</li>
+
+        <li>Implemented centralized state management using React Context + localStorage, enabling real-time sync of queue data, posts, tags, tracks, and map pins across views.</li>
+
+        <li>Developed Express/Node.js REST APIs for user registration, nickname validation, profile retrieval, post creation, activity history, and notifications using JSON-based persistence.</li>
+
+        <li>Integrated frontend API utilities with Vite proxy setup to streamline local full-stack development and backend communication.</li>
+
+        <li>Documented system architecture, API flows, setup process, and future roadmap for authentication, audio integration, and map enhancements.</li>
+    </ul>
+    </div>
+
+    <div class="entry">
+    <div class="row">
+        <span class="org">Optimal Contour Selection for Real-Time Inverse Transform Computation</span>
+        <span class="date">2025</span>
+    </div>
+
+    <div class="detail" style="font-style: italic; margin-bottom: 3px;">
+        Python, SymPy, NumPy, Pandas, Matplotlib &nbsp;
+    </div>
+
+    <ul>
+        <li>Developed a Python-based framework to automate inverse Laplace and Z-transform computation for DSP transfer functions using symbolic computation techniques.</li>
+
+        <li>Implemented automated pole detection, contour selection, and residue-theorem-based evaluation to replace manual mathematical workflows.</li>
+
+        <li>Benchmarked the system against FFT, Talbot, Gaver-Stehfest, and MATLAB Symbolic methods, achieving up to 4.5× faster execution with low memory usage.</li>
+
+        <li>Validated the framework on second-order systems, IIR filters, cascaded systems, and Fourier-type integrals with sub-10 ms execution for up to 8 poles.</li>
+    </ul>
+    </div>
+
+    
+
+  <!-- ACTIVITIES -->
+  <div class="section">
+    <div class="section-title">Activities</div>
+
+    <div class="entry">
+      <div class="row">
+        <span class="org">Society of Industrial and Applied Mathematics(SIAM) VIT</span>
+        <span class="location">Vellore,Tamil Nadu</span>
+      </div>
+      <div class="row">
+        <span class="role">Senior Core</span>
+        <span class="date">March 2025 – Present</span>
+      </div>
+    </div>
+
+   
+
+  <!-- ADDITIONAL -->
+    <div class="section">
+    <div class="section-title">Additional</div>
+
+    <div class="additional-row">
+        <strong>Technical Skills:</strong>
+        Advanced in Java, Data Structures &amp; Algorithms, Problem Solving;
+        Proficient in React.js, Node.js, Express.js, REST APIs, Python, Git, HTML/CSS
+    </div>
+
+
+    <div class="additional-row">
+        <strong>Certifications &amp; Training:</strong>
+        HackerRank 4-Star Java (Gold Badge); AWS Cloud &amp; Solutions Architecture Learning Path (In Progress)
+    </div>
+
+    <div class="additional-row">
+        <strong>Areas of Interest:</strong>
+        Full-Stack Development, System Design, Cloud Computing, DSP Applications, AI-Assisted Systems
+    </div>
+    </div>
+
 </body>
 </html>
