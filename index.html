@@ -1,83 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Akshat Raj – Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+        body {
+            margin: 0;
+            background: #f4f1eb;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
 
-  <link rel="stylesheet" href="styles.css" />
+        .resume {
+            width: min(900px, calc(100% - 32px));
+            margin: 32px auto;
+            padding: 40px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 18px;
+            margin-bottom: 28px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.06em;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .project {
+            margin-bottom: 18px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            font-weight: 700;
+        }
+
+        .project-stack {
+            color: #555;
+            font-style: italic;
+        }
+
+        ul {
+            margin: 8px 0 0 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 24px;
+            }
+
+            .project-header {
+                display: block;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
+    <main class="resume">
+        <header>
+            <h1>Resume</h1>
+            <p>Software Developer</p>
+        </header>
 
-    <h1>Akshat Raj</h1>
+        <section class="section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
 
-    <!-- CONTACTS -->
-    <div class="contacts">
-      <span>Kanpur, India</span>
-      <span>+91 8401201559</span>
-      <span>akshatraj2312@gmail.com</span>
-      <span>github.com/albertaj23</span>
-      <span>linkedin.com/in/akshat-raj-77734130a</span>
-    </div>
-
-    <!-- EDUCATION -->
-    <section>
-      <h2>Education</h2>
-
-      <div class="row">
-        <div>
-          <p class="bold">Vellore Institute of Technology</p>
-          <p>B.Tech, Computer Science and Engineering</p>
-        </div>
-        <div class="date">2024 – 2028</div>
-      </div>
-    </section>
-
-    <!-- TECHNICAL SKILLS -->
-    <section>
-      <h2>Technical Skills</h2>
-      <p><strong>Languages:</strong> Java (DSA & OOP), JavaScript, Python</p>
-      <p><strong>Frameworks:</strong> React.js, React Native</p>
-      <p><strong>CS Fundamentals:</strong> Data Structures & Algorithms, Object-Oriented Programming</p>
-      <p><strong>Tools:</strong> Git, GitHub, HTML, CSS</p>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <h2>Experience</h2>
-
-      <div class="row">
-        <div>
-          <p class="bold">Smart India Hackathon (SIH) — App Developer</p>
-          <p class="italic">Crop AI | React Native</p>
-        </div>
-        <div class="date">Aug 2025</div>
-      </div>
-
-      <ul>
-        <li>Developed a cross-platform mobile application using React Native for agricultural decision support.</li>
-        <li>Built modular UI components and managed application state for real-time user inputs.</li>
-        <li>Collaborated in a team-based, time-constrained environment to design and prototype core features.</li>
-        <li>Applied problem devolution and OOP principles to optimize application logic.</li>
-      </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
-
-      <p class="bold">Music & Travel Booking Web Application</p>
-      <ul>
-        <li>Built a React-based web application combining music discovery with travel booking workflows.</li>
-        <li>Designed reusable UI components and implement CRUD operations using React.</li>
-      </ul>
-    </section>
-
-  </div>
+            <article class="project">
+                <div class="project-header">
+                    <h3>JumbleM — Full-Stack Music &amp; Location Social Web App</h3>
+                    <span class="project-stack">React, Vite, React Router, Express.js, Node.js</span>
+                </div>
+                <ul>
+                    <li>Built and documented a React/Vite single-page application where users create music-based “vibe” submissions that sync into a queue, social-style post feed, and travel-map visualization.</li>
+                    <li>Implemented routed experiences for onboarding, vibe creation, queue management, travel-map filtering, and nickname-based profile flows using React Router, reusable components, React Context, hooks, and localStorage-backed state.</li>
+                    <li>Developed a lightweight Express/Node.js REST API for health checks, nickname validation, user registration, profile lookup, category post creation, activity history, notification clearing, and JSON-file demo persistence.</li>
+                    <li>Centralized frontend API helpers with Vite proxying and authored contributor-facing documentation covering architecture, setup workflow, endpoint behavior, feature ownership, and a roadmap for authentication, maps, audio links, notifications, and production data hardening.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
